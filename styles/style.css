@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #FBFADA;
+    --secondary-color:  #38794e;
+    --hover-color: #1e5333;
+}
+
+header {
+    background-color: var(--primary-color);
+    background: linear-gradient( #e7e48f, #FBFADA,white); 
+    padding: 0px 30px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600
+    
+}
+
+header nav ul li a:hover {
+    color: var(--hover-color);
+    font-weight: 605;
+}
+
+section {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+main{
+    background: linear-gradient( white, #FBFADA, #e7e48f); 
+}
+
+#banner{
+    background-image: url(../assets/banner_backgroundd.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .title-and-text{
+        flex-direction: column;
+        justify-content: center;
+        }
+    
+}
+
+h2{
+    color: var(--hover-color);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+p{
+    color: var(--hover-color);
+    text-align:justify;
+    font-weight: 600;
+}
+
+#categories .container-grid-categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+    
+}
+#categories .card1, .card2, .card3 {
+    align-items: center;
+    text-align: center;
+    padding: 250px 20px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 10px -4px 56px 4px rgba(219,199,84,0.46);
+}
+#categories .card1 {
+    background-image: url(../assets/background_category1.png);
+    background-size: cover;
+}
+
+#categories .card2 {
+    background-image: url(../assets/background_category2.png);
+    background-size: cover;
+}
+
+#categories .card3 {
+    background-image: url(../assets/background_category3.png);
+    background-size:cover;
+}
+
+#categories a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#categories a:hover {
+    color: var(--hover-color);
+}
