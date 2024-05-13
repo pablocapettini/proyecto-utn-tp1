@@ -72,19 +72,38 @@ p{
     font-weight: 600;
 }
 
-#categories .container-grid-categories{
+#categories .container-grid-categories, 
+#products .container-grid-products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     padding: 20px;
     
 }
-#categories .card1, .card2, .card3 {
-    align-items: center;
+#categories .card1, .card2, .card3,
+#products .card {
+    /* align-items: center;
     text-align: center;
     padding: 250px 20px;
     border: 3px solid var(--primary-color);
     box-shadow: 10px -4px 56px 4px rgba(219,199,84,0.46);
+    transition: 0.3s transform; */
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px ;
+    box-shadow: 10px -4px 56px 4px rgba(219,199,84,0.46);
+    transition: 0.3s transform;
+}
+
+#categories .card1, .card2, .card3 {
+    padding: 250px 20px;
+}
+
+#categories .card1:hover, .card2:hover, .card3:hover,
+#products .card:hover {
+    transform: scale(1.03);
 }
 #categories .card1 {
     background-image: url(../assets/categorias_img/background_category1.png);
@@ -104,9 +123,112 @@ p{
 #categories a {
     text-decoration: none;
     color: var(--secondary-color);
+    display: block;
 }
 
 #categories a:hover {
     color: var(--hover-color);
 }
+
+#products h2, 
+#contact h2 {
+    text-align: center;
+}
+
+/* #products .container-grid-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+    
+} */
+
+/* #products .card {
+    background-color: var(--primary-color);
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px ;
+    box-shadow: 10px -4px 56px 4px rgba(219,199,84,0.46);
+    transition: 0.3s transform;
+}
+ */
+/* #products .card:hover {
+    transform: scale(1.03);
+} */
+
+#products .card button {
+    color: var(--primary-color);
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+#products .card button:hover {
+    background-color: var(--hover-color);
+}
+
+form {
+    background-color: var(--secondary-color);
+    width: 70%;
+    padding: 10px 30px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+form * {
+    display: block;
+    margin: 10px 0px;
+    width: 100%;
+    border: none;
+    color: var(--primary-color);
+}
+
+form button{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--hover-color);
+    margin: auto;
+    width: 25%;
+    border-radius: 10px;
+}
+
+form button:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border: 2px solid var(--primary-color);
+}
+#contact input {
+    padding: 3px;
+    border: 2px solid var(--hover-color);
+    border-radius: 10px;
+}
+
+#contact textarea {
+    height: 100px;
+    border: 2px solid var(--hover-color);
+    border-radius: 10px;
+}
+
+footer {
+    height: 200px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline ;
+    padding: 20px;
+}
+
+.contact-buttons {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: var(--primary-color);
+}
+
+
 
