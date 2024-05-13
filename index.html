@@ -147,29 +147,32 @@
         <section id="contact">
             <h2>Contactanos</h2>
             <br>
-            <form action="https://formsubmit.co/pablocapettini@gmail.com" method="POST">
+            <form action="https://formspree.io/f/mgegqyng" method="POST">
                 <div>
-                    <label for="name">Nombre</label>
+                    <label>Nombre
                     <input 
-                    id= "name"
                     type="text"
+                    name="name"
                     placeholder="Ingrese su nombre"
                     required>
+                    </label>
                 </div>
                 <div>
-                    <label for="email">Correo electrónico</label>
+                    <label>Correo electrónico
                     <input 
-                    id= "email"
-                    type="email"
+                    type= "email"
+                    name="email"
                     placeholder="Ingrese su e-mail"
                     required>
+                    </label>
                 </div>
                 <div>
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" 
+                    <label>Mensaje
+                    <textarea name="message" 
                     placeholder="Escriba su mensaje" 
                     required>
                     </textarea>
+                    </label>
                 </div>
                 <button type="submit">Enviar</button>
             </form>

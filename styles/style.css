@@ -166,8 +166,7 @@ form * {
     display: block;
     margin: 10px 0px;
     width: 100%;
-    border: none;
-    color: var(--primary-color);
+    color: black;
 }
 
 form button{
