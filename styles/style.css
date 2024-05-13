@@ -239,3 +239,17 @@ footer .contact-mail a{
     background: #fff;
     color: #0df053;
 }
+
+@media (max-widht: 880px) {
+    #categories .container-grid-categories, 
+    #products .container-grid-products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-widht: 480px) {
+    #categories .container-grid-categories, 
+    #products .container-grid-products{
+        grid-template-columns: 1fr;
+    }
+}
